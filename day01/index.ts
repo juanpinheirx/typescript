@@ -7,4 +7,4 @@ function printId(id: number | string) {
 printId(101);
 printId("202");
 
-// with this, my functin is able to receive a number or string as ID.
+// with this, my functin is able to receive a number or string as ID. if i try to get an boolean into this function, i'll get an error from typescript.
