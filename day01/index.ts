@@ -14,3 +14,12 @@ function printId(id: number | string) {
 }
 
 printId(101); // if i try to do the toToUpperCase() method, i'll get an error even before starting my function because this method is just for strings, not numbers as my function requires.
+
+function printId2(id: number | string) {
+  if (typeof id === "string") {
+    return console.log(id.toUpperCase());
+  }
+  return console.log(id);
+}
+
+printId2(101); // to avoid errors, an simple verification like this will be enough.
